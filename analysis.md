@@ -20,9 +20,9 @@ The cipher is completely vulnerable to manipulation because it does not provide 
 * If an attacker knows the original plaintext byte $m_x$, they can force the decryption to yield a chosen byte $\widehat{m}_x$ by crafting a manipulated ciphertext byte $c_x^1$.
 $$c_x^1 = c_x \oplus m_x \oplus \widehat{m}_x$$
 * When the receiver attempts to decrypt $c_x^1$, the exclusive or properties allow the attacker's chosen byte to come out intact.
-$$\text{Decrypted Byte} = c_x^1 \oplus k_{x \bmod \ell}$$
-$$\text{Decrypted Byte} = (c_x \oplus m_x \oplus \widehat{m}_x) \oplus k_{x \bmod \ell}$$
+Decrypted Byte} $$ = c_x^1 \oplus k_{x \bmod \ell}$$
+Decrypted Byte} $$ = (c_x \oplus m_x \oplus \widehat{m}_x) \oplus k_{x \bmod \ell}$$
 * Substitute $c_x = m_x \oplus k_{x \bmod \ell}$.
-$$\text{Decrypted Byte} = (m_x \oplus k_{x \bmod \ell}) \oplus m_x \oplus \widehat{m}_x \oplus k_{x \bmod \ell} = \widehat{m}_x$$
+Decrypted Byte $$ = (m_x \oplus k_{x \bmod \ell}) \oplus m_x \oplus \widehat{m}_x \oplus k_{x \bmod \ell} = \widehat{m}_x$$
 * The attacker must know or guess the original plaintext byte $m_x$.
 * The attack succeeds because the exclusive or cipher is purely linear and bitwise. Modification of a specific bit in the cipher directly interacts with the same bit in the decrypted plaintext without needing to know the key.
