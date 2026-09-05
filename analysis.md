@@ -23,9 +23,9 @@ $$c_x^1 = c_x \oplus m_x \oplus \widehat{m}_x$$
 
  Decrypted Byte $= c_x^1 \oplus k_{x \bmod \ell}$
 
- Decrypted Byte $$= (c_x \oplus m_x \oplus \widehat{m}_x) \oplus k_{x \bmod \ell}$$
+ Decrypted Byte $$= (c_x \oplus m_x \oplus \text{(widehat) modified byte: }m_x) \oplus k_{x \bmod \ell}$$
 * Substitute $c_x = m_x \oplus k_{x \bmod \ell}$.
 
- Decrypted Byte $$= (m_x \oplus k_{x \bmod \ell}) \oplus m_x \oplus \widehat{m}_x \oplus k_{x \bmod \ell} = \widehat{m}_x$$
+ Decrypted Byte $$= (m_x \oplus k_{x \bmod \ell}) \oplus m_x \oplus \text{(widehat) modified byte: }m_x \oplus k_{x \bmod \ell} = \widehat{m}_x$$
 * The attacker must know or guess the original plaintext byte $m_x$.
 * The attack succeeds because the exclusive or cipher is purely linear and bitwise. Modification of a specific bit in the cipher directly interacts with the same bit in the decrypted plaintext without needing to know the key.
