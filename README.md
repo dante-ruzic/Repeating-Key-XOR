@@ -13,12 +13,12 @@ Language Used:
 ```Example
 C:\Users\[user]\Documents\GitHub\Repeating-Key-XOR> javac XOR.java
 C:\Users\[user]\Documents\GitHub\Repeating-Key-XOR> java XOR keygen --length 10
-a3cc4beadd141c544f9
+44b8c9edd4f7b46d9b02
 
-C:\Users\[user]\Documents\GitHub\Repeating-Key-XOR> java XOR encrypt --key a3cc4beadd141c544f9 --text "Hello world"
-eba92786b2346b3b3795c7
+C:\Users\[user]\Documents\GitHub\Repeating-Key-XOR> java XOR encrypt --key 44b8c9edd4f7b46d9b02 --text "Hello world"
+0cdda581bbd7c302e96e20
 
-C:\Users\[user]\Documents\GitHub\Repeating-Key-XOR> java XOR decrypt --key a3cc4beadd141c544f9 --ciphertext eba92786b2346b3b3795c7
+C:\Users\[user]\Documents\GitHub\Repeating-Key-XOR> java XOR decrypt --key 44b8c9edd4f7b46d9b02 --ciphertext 0cdda581bbd7c302e96e20
 Hello world
 ```
 
